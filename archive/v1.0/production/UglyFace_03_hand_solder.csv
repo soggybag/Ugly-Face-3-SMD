@@ -1,0 +1,8 @@
+Designator,Value,Footprint,Qty,Note
+D2,LED,LED_D3.0mm,1,"3mm LED: square pad = cathode (K), round pad = anode (+)"
+RV1,B1k,Potentiometer_Alpha_16mm_Vertical,1,ENVELOPE
+"RV2, RV4",B10k,Potentiometer_Alpha_16mm_Vertical,2,THRESHOLD; MIX
+RV3,C100k,Potentiometer_Alpha_16mm_Vertical,1,FREQUENCY
+RV5,A100k,Potentiometer_Alpha_16mm_Vertical,1,VOLUME
+U3,Vactrol,Vactrol_LED_LDR_DIY,1,"DIY vactrol: LED pads 1(+)/2, LDR pads 3/4"
+J1-J8,wire pads,SolderWire 0.9mm,8,"9V, GND, IN, IG, OUT, OG, L, LG"
