@@ -21,21 +21,23 @@ Schematic: [UglyFace_03_schematic.pdf](UglyFace_03_schematic.pdf) · Layout: [Ug
 | Knob | Part | Function |
 |---|---|---|
 | ENVELOPE | RV1 B1k | How much the playing level drives the vactrol (pitch bend) |
-| THRESHOLD | RV2 B10k | Gate bias: gated / glitchy / always on (opens at ~70%) |
+| THRESHOLD | SW1 toggle (v1.1) | GATED / GLITCH / ON. GLITCH sits on the 555's reset threshold, set once with the RV2 trimmer |
 | FREQUENCY | RV3 C100k | Oscillator pitch (measured ~33 Hz to ~5 kHz) |
-| MIX | RV4 B10k | Dry fuzz ↔ synth square |
+| MIX | RV4 B10k | Clean guitar (v1.1) ↔ synth square |
 | VOLUME | RV5 A100k | Output level |
 
 ## Build notes
 
-- **Hand-soldered:** five Alpha 16 mm pots, the 3 mm LED (D2), the DIY vactrol U3 (LED + LDR in heat-shrink or a light-tight box), and the wire pads (9V/GND, IN/IG, OUT/OG, LED−/LG).
-- **Recommended mod for this revision:** tack a **100 µF electrolytic across C4** (+ to VB, the MIX pot's middle-pin side). The stock 22 µF ceramic loses capacitance at 4.4 V. Without the mod, oscillator ripple on VB feeds back through the gain-201 preamp into the gate, and THRESHOLD becomes very sticky (on at 75%, off at 25%).
+- **Hand-soldered:** four Alpha 16 mm pots, the THRESHOLD toggle (Taiway 100 ON-OFF-ON), the RV2 3362P 10k trimmer, the 3 mm LED (D2), the DIY vactrol U3 (LED + LDR in heat-shrink or a light-tight box), and the wire pads (9V/GND, IN/IG, OUT/OG, LED−/LG).
+- **v1.0 boards only, recommended mod:** tack a **100 µF electrolytic across C4** (+ to VB, the MIX pot's middle-pin side). The stock 22 µF ceramic loses capacitance at 4.4 V. Without the mod, oscillator ripple on VB feeds back through the gain-201 preamp into the gate, and THRESHOLD becomes very sticky (on at 75%, off at 25%).
 - Power: 9 V centre-negative; SS14 series reverse-polarity protection; ~4.3 mA (+ ~3.5 mA LED).
 
 ## Status
 
+- **v1.1 (2026-10-03, JLC files generated):** C4 100 µF, 22k into RESET, RC-filtered 555 supply, C7 2.2 µ, C12/C13 1 µ, clean dry path (U4A) for MIX, buffered VB (U4B), THRESHOLD toggle + GLITCH trimmer. Details in [docs/Build Notes.md](docs/Build%20Notes.md).
+
 - Boards received from JLCPCB 2026-10-01; bench tested 2026-10-02; **working with a guitar.** Measurements: [docs/Test Procedure.md](docs/Test%20Procedure.md).
-- **Known issues / next revision** ([docs/Build Notes.md](docs/Build%20Notes.md)):
+- **Known issues (v1.0) / next revision** ([docs/Build Notes.md](docs/Build%20Notes.md)):
   - C4 → 100 µF.
   - FREQUENCY low end too low (33 Hz); C10 470n ceramic behaves like ~235n under bias, so use a film/C0G cap and retune.
   - Envelope weak (LDR choice / LED drive).

@@ -1,5 +1,31 @@
 # Ugly Face 3 SMD: build notes and v2 ideas
 
+## v1.1 changes (2026-10-03)
+
+Bench fixes from v1.0, plus a clean dry path so MIX blends **clean guitar** with the synth square.
+
+| Change | Parts | Why |
+|---|---|---|
+| Bias cap 22 µ X5R → **100 µ electrolytic** | C4 (C970685, same as C1/C8) | Confirmed fix for THRESHOLD hysteresis (ripple on VB reached the gain-201 preamp) |
+| **22k in series with RESET** | R22 | CMOS protection: pin 4 no longer clamps tens of mA below GND every cycle |
+| Preamp LF corner 16 → ~72 Hz | C7 10 µ → 2.2 µ (C377773) | Slow ripple isn't amplified ×201. Control path only; the dry signal isn't affected |
+| **RC-filtered 555 supply** (V555) | R23 47 Ω, C18 22 µ, C3 moved onto V555 | Keeps the 555's current pulses off +9V and VB |
+| Mix coupling 100 n → **1 µ** | C12, C13 (C28323) | Was a ~100 Hz high-pass that spiked low-pitch squares and thinned the guitar |
+| **Clean dry stage** | U4A (TL072), R24 33k, R25 10k, C17 4.7 µ | Gain 4.3, never clips on normal pickups. U1A (gain 201) now drives only the gate and vactrol, unchanged |
+| Optional dry soft clip | D3/D4, **not fitted**: compact 2.54 mm through-hole pads | Fit two 3 mm LEDs (red ≈ ±1.8 V) or standing 1N4148s (≈ ±0.6 V, more clipping). Square pad = cathode. The pads are in the bottom-middle, clear of every back-mounted pot, so the leads don't touch a pot housing |
+| **Buffered VB** | U4B | MIX pot wiper and preamp bias return to a stiff 4.5 V |
+| Mix balance | R13 15k → 47k | The 8 Vpp square was clipping U1B at the synth end; the clean dry is lower |
+| **THRESHOLD → toggle** (as UF1 v1.2) | SW1 Taiway 100 ON-OFF-ON, R20 1k (GATED), R21 2k2 (ON), RV2 → 3362P 10k trimmer | The pot behaved like a 3-position switch anyway |
+
+**Setting GLITCH:** toggle to centre, no input, turn RV2 until the 555 just starts (pin 4 ≈ 1.0 V), then back off slightly.
+
+**Layout:** SW1 sits at the old THRESHOLD shaft (back side). R4/R5/R6 moved off its pins. RV2 3362P is bottom-left (front, adjust with the lid off). U4 and the dry-stage parts (R24, R25, C17, C19, D3/D4) are in the bottom-middle, close to U1 so the high-impedance input trace stays short. R19 (LED resistor) moved to the top band. R23/C18 are under U2. Re-routed with `_tools/autoroute.py` (20 vias, DRC 0/0, parity 0).
+
+**Layout rule learned:** through-hole parts can't go under the back-mounted 16 mm pots. Each pot's body and terminal housing covers the board from the shaft down to its pin row, which is the whole top half on this board. The v1.0 9V/GND wire pads and two vactrol pins already sit under the FREQUENCY pot; trim those leads flush. The v1.0 board/schematic are in `autoroute-backups/UglyFace_03-v1.0.*`.
+
+**Still open for later:** C10 timing cap (film/C0G, retune FREQUENCY), weak envelope (LDR / LED drive), the OUT spike investigation (re-test once boxed).
+
+
 Findings from bench testing (see `Test Procedure.md`). UF1 findings that also apply here are in `../../Ugly Face 1 SMD/docs/Build Notes.md`, e.g. THRESHOLD acting like a 3-position switch.
 
 ## Protecting the CMOS 555 (2026-10-02)

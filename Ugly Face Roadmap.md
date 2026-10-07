@@ -100,8 +100,8 @@ TLC555 (FREQ, R10 1k2) ──────────────► VCA ──�
 - [ ] Measure the LDR's behaviour on a UF3 (resistance lit/dark, and roughly how fast it releases) so the replacement can copy it.
 - [ ] Check JLC stock/basic status: TLC555IDR, TLC556, PC817 SMD, BAT54S, CD4053 (C6742 basic), TL074.
 - [ ] Decide the UF4 control set and enclosure (125B Hyper Fuzz drilling + toggles?).
-- [ ] THRESHOLD → 3-position switch (GATED / GLITCH / ON), with a trimmer setting the GLITCH bias at the 555's reset threshold. (UF1 bench test 2026-10-01: the TLC555 resets at 1.0 V, and the pot behaves like 3 settings, not a range.) Details in `Ugly Face 1 SMD/docs/Build Notes.md`. Applies to UF3's gate too if it's built the same way.
-- [ ] Protect the CMOS 555: 10k–47k series resistor into RESET (pin 4 is driven ~3 V below GND every cycle via the gate coupling cap), optional BAT54S clamp; on UF1-style boards, never drive the output jack straight from DISCH; optional TVS for over-voltage. Details in both boards' `docs/Build Notes.md`.
+- [x] (UF3 v1.1) THRESHOLD → 3-position switch (GATED / GLITCH / ON), with a trimmer setting the GLITCH bias at the 555's reset threshold. (UF1 bench test 2026-10-01: the TLC555 resets at 1.0 V, and the pot behaves like 3 settings, not a range.) Details in `Ugly Face 1 SMD/docs/Build Notes.md`. Applies to UF3's gate too if it's built the same way.
+- [x] (UF3 v1.1, R22 22k) Protect the CMOS 555: 10k–47k series resistor into RESET (pin 4 is driven ~3 V below GND every cycle via the gate coupling cap), optional BAT54S clamp; on UF1-style boards, never drive the output jack straight from DISCH; optional TVS for over-voltage. Details in both boards' `docs/Build Notes.md`.
 - [ ] Decide whether the APC goes in UF4 or its own spin-off.
 - [ ] Simulate/breadboard the envelope follower attack/release values.
 - [ ] Draw the UF4 schematic once Phase 1 picks the VCA and pitch-control method.
@@ -114,3 +114,8 @@ TLC555 (FREQ, R10 1k2) ──────────────► VCA ──�
 - UF4: keep MIX, or replace it with a DYNAMICS amount?
 
 - UF4 VCA option (2026-10-02): the Trem SMD's discrete transistor VCA (bench-proven) is a JLC-friendly alternative to the LM13700 / CD4053 switched envelope. See `Trem SMD/docs/VCA Building Block.md`.
+- Control count (2026-10-02): UF1's 4-control layout may beat UF3's 5. Candidate for the next revision: 3 knobs (ENV, FRQ, VOL) + a THRESHOLD 3-position toggle (GATED / GLITCH / ON, glitch point on a trimmer). Decide whether MIX earns its place. See `Ugly Face 1 SMD/docs/Build Notes.md`.
+
+- **Ugly Face 2 → 125B (2026-10-02):** move UF2 to a 125B with the Hyper Fuzz v1.1 layout: 9 mm pots, three on top, the bottom two aligned outward under the outer top pots, LED centred between the bottom pots, jacks on top, ribbon header centred on the footswitch.
+
+- **UF3 v1.1 (2026-10-03):** Idea 3 done in its simplest form: clean dry stage (U4A) feeding MIX, control preamp unchanged; optional D3/D4 soft-clip pads.
