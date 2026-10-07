@@ -1,0 +1,54 @@
+Reference,Value,Footprint,Side,X mm,Y mm,Rotation,LCSC,Fitted by
+C1,100u,Capacitor_SMD:CP_Elec_6.3x7.7,front,134.2,90.9,180.0,C970685,JLC
+C2,100n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,136.96,116.8,180.0,C49678,JLC
+C3,100n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,161.0,104.4,90.0,C49678,JLC
+C4,22u,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,front,145.3,105.0,0.0,C12891,JLC
+C5,1n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,126.56,104.5,180.0,C46653,JLC
+C6,10n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,135.16,104.3,0.0,C1710,JLC
+C7,10u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,147.08,122.14,0.0,C15850,JLC
+C8,100u,Capacitor_SMD:CP_Elec_6.3x7.7,front,165.9,112.1,-90.0,C970685,JLC
+C9,2.2u,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,front,126.6,116.26,-90.0,C50254,JLC
+C10,470n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,151.7,95.6,0.0,C13967,JLC
+C11,10n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,161.0,108.6,90.0,C1710,JLC
+C12,100n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,171.7,105.34,-90.0,C49678,JLC
+C13,100n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,165.36,92.8,0.0,C49678,JLC
+C14,220p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,142.84,114.8,180.0,C107145,JLC
+C15,100n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,155.65,120.87,90.0,C49678,JLC
+C16,10u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,front,126.0,90.19,-90.0,C15850,JLC
+D1,SS14,Diode_SMD:D_SMA_Handsoldering,front,134.1,82.5,0.0,C2480,JLC
+D2,LED,LED_THT:LED_D3.0mm,back,149.94,110.71,180.0,,JLC
+J1,9V,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,front,143.7,81.86,0.0,,hand
+J2,9V GND,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,front,148.3,81.86,0.0,,hand
+J3,IN,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,front,144.86,128.49,0.0,,hand
+J4,IN GND,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,front,142.32,128.49,0.0,,hand
+J5,OUT,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,front,152.48,128.49,0.0,,hand
+J6,OUT GND,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,front,155.02,128.49,0.0,,hand
+J7,LED -,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,front,147.4,128.49,0.0,,hand
+J8,LED GND,Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm,front,149.94,128.49,0.0,,hand
+R1,10k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,139.75,97.25,90.0,C17414,JLC
+R2,10k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,139.75,101.5,90.0,C17414,JLC
+R3,1M,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,126.5,109.1,0.0,C17514,JLC
+R4,1M,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,130.4,105.0,90.0,C17514,JLC
+R5,200k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,130.3,109.8,90.0,C17539,JLC
+R6,1k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,131.1,116.1,90.0,C17513,JLC
+R7,100,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,159.8,112.6,0.0,C17408,JLC
+R8,56k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,126.9,120.6,0.0,C17756,JLC
+R9,1k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,155.3,115.1,180.0,C17513,JLC
+R10,470,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,144.5,95.5,0.0,C17710,JLC
+R11,100k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,172.4,113.5,90.0,C149504,JLC
+R12,15k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,161.0,90.6,90.0,C17475,JLC
+R13,15k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,170.9,94.1,0.0,C17475,JLC
+R14,15k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,165.7,89.5,0.0,C17475,JLC
+R15,15k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,170.9,90.2,90.0,C17475,JLC
+R16,47k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,142.7,110.6,-90.0,C17713,JLC
+R17,15k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,147.08,114.52,180.0,C17475,JLC
+R18,100,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,126.0,94.8,90.0,C17408,JLC
+R19,2k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,front,147.0,118.3,180.0,C17604,JLC
+RV1,B1k,UglyFace:Potentiometer_Alpha_16mm_Vertical,front,166.45,124.68,0.0,,JLC
+RV2,B10k,UglyFace:Potentiometer_Alpha_16mm_Vertical,front,130.89,124.68,0.0,,JLC
+RV3,C100k,UglyFace:Potentiometer_Alpha_16mm_Vertical,front,148.67,99.28,0.0,,JLC
+RV4,B10k,UglyFace:Potentiometer_Alpha_16mm_Vertical,front,166.45,99.28,0.0,,JLC
+RV5,A100k,UglyFace:Potentiometer_Alpha_16mm_Vertical,front,130.89,99.28,0.0,,JLC
+U1,TL072,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,front,136.82,110.5,0.0,C6961,JLC
+U2,TLC555,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,front,155.6,106.5,0.0,C6987,JLC
+U3,Vactrol,UglyFace:Vactrol_LED_LDR_DIY,front,148.8,90.3,0.0,,JLC
