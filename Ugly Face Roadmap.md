@@ -119,3 +119,40 @@ TLC555 (FREQ, R10 1k2) ──────────────► VCA ──�
 - **Ugly Face 2 → 125B (2026-10-02):** move UF2 to a 125B with the Hyper Fuzz v1.1 layout: 9 mm pots, three on top, the bottom two aligned outward under the outer top pots, LED centred between the bottom pots, jacks on top, ribbon header centred on the footswitch.
 
 - **UF3 v1.1 (2026-10-03):** Idea 3 done in its simplest form: clean dry stage (U4A) feeding MIX, control preamp unchanged; optional D3/D4 soft-clip pads.
+
+## Envelope: string balance and replacing the vactrol (2026-10-09, after the UF1 v1.2 bench test)
+
+**User observation (UF1 v1.2, VTL5C9-style vactrol):** the envelope works best on the low E, is marginal on A and D, and weak on G/B/high E.
+
+**Why:**
+1. **The LED is driven from the LM386 *after* it clips** (gain 200). Every note becomes the same ~7–8 Vpp square, so the level information is mostly destroyed. What's left is **how long each note keeps clipping**.
+2. **The low E has the most pickup output and the longest sustain,** so it stays in clipping far longer. Thin strings start lower and decay faster, so they clip only briefly.
+3. **The LDR integrates light.** Short bursts never pull its resistance far down. Its slow release (the "animation") also means a brief note barely moves it.
+4. Pickups also have less output on the plain strings.
+
+### Options
+
+**A. Keep the vactrol, fix how it's driven** (smallest change, keeps the VTL5C9 animation):
+- A **clean sidechain**: tap the guitar *before* the LM386, with a gain stage plus **SENS** trim.
+- **Pre-emphasis** in the sidechain: a high-shelf or gentle high-pass (+6–10 dB above ~250 Hz), so plain strings drive the detector as hard as the low E.
+- A **peak detector** (precision rectifier or BAT54S doubler) with a fast attack and a set release, so short, quick-decaying notes still register.
+- An **op-amp LED driver** (current-mode, with a series resistor) instead of hanging the LED on C5. Optionally add a diode in the driver's feedback for a log-ish response, so a 20 dB quieter string still gives a useful fraction of the sweep.
+- Parts: one TL072 + a few passives.
+
+**B. Replace the vactrol** (reliable, all SMD at JLC, no LDR sourcing):
+- The same sidechain/detector as A, then an **LM13700 OTA as a voltage-controlled conductance** in the LDR's place: inputs across (pin 3 − timing cap) through dividers, output into the timing cap. It behaves like a resistor from the 555's output to the cap, set by Iabc, and works in both directions like the LDR.
+- Frequency ∝ Iabc, so the range is huge. Add a **one-transistor exponential converter** ahead of Iabc for musical (octave-per-volt-ish) response.
+- The LDR's lag is replaced by the detector's attack/release RC (a DECAY control if there's a spare knob).
+- **Not** a plain transistor current source into the timing cap: it only helps one half-cycle, skews the duty and can stall the discharge.
+- LM13700 is already used on Penfold (C1346265, extended).
+
+**C. 555 CONT pin (pin 5)** driven by the envelope: the fewest parts, but only ~1–2 octaves and it changes the duty cycle. Fine for a subtle wobble, not the big swoop.
+
+**D. Different concept: pitch tracking.** A frequency-to-voltage converter (the gate already fires once per guitar cycle) sets the offset from the note's *pitch*, not its loudness. Every string gets an effect, and higher notes push the 555 higher, a harmonizer-ish relationship. A new pedal idea rather than a UF1 fix.
+
+**Status 2026-10-09: the user is breadboarding A.** Schematic and bring-up/listening checklist: `Ugly Face 1 SMD/breadboard/Envelope A/` (TL072 sidechain + tilt + peak detector, LM358 ratiometric ENV − VB, 2N3904 current-sink vactrol driver).
+
+**Recommendation:** breadboard **A's front end once** (clean sidechain + pre-emphasis + detector), then compare driving (1) the VTL5C9 and (2) the LM13700 conductance with the same envelope.
+- If the vactrol version sounds as good and the LDR supply is OK: A.
+- Otherwise: B, which is the Ugly Face 4 (Dynamic) direction above.
+- **Board size:** the UF1 frame (50.5 × 32.7 mm) is tight for an extra TL072 + LM13700. A likely fits; B probably wants the UF3 frame.

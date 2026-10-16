@@ -25,3 +25,5 @@
 - `production`/
 
 `production/` holds the files sent to JLCPCB for this revision: UglyFace_03.zip, UglyFace_03_hand_solder.csv, bom.csv, designators.csv, netlist.ipc, positions.csv.
+
+**Building a spare v1.1 board?** Read `Building Leftover Boards.md` first: R21 → 15k, R13 → 220k, and how to wire ENVELOPE.
