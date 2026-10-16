@@ -1,0 +1,8 @@
+Side,Label,X (mm),Y (mm),"Diameter (mm, raw aluminium)"
+A,"MIX (RV4, 16 mm B10k)",-17.95,36.22,7.5
+A,"FREQUENCY (RV3, 16 mm C100k)",-0.17,36.22,7.5
+A,"VOLUME (RV5, 16 mm A100k)",17.61,36.22,7.5
+A,"ENVELOPE (RV1, 16 mm B1k)",-17.95,10.82,7.5
+A,"LED (3 mm)",-0.17,8.79,3.2
+A,"THRESHOLD toggle (SW1, Taiway 100, ON-OFF-ON)",17.61,9.42,6.5
+A,"Footswitch 3PDT",0.0,-37.5,12.2

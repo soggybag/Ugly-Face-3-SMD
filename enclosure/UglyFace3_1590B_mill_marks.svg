@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60.0mm" height="112.0mm" viewBox="0 0 60.0 112.0">
+<circle id="MIX" cx="12.050" cy="19.780" r="3.750" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="MIX_centre" cx="12.050" cy="19.780" r="0.5" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="FREQ" cx="29.830" cy="19.780" r="3.750" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="FREQ_centre" cx="29.830" cy="19.780" r="0.5" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="VOLUME" cx="47.610" cy="19.780" r="3.750" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="VOLUME_centre" cx="47.610" cy="19.780" r="0.5" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="ENV" cx="12.050" cy="45.180" r="3.750" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="ENV_centre" cx="12.050" cy="45.180" r="0.5" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="LED" cx="29.830" cy="47.210" r="1.600" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="LED_centre" cx="29.830" cy="47.210" r="0.5" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="THR" cx="47.610" cy="46.580" r="3.250" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="THR_centre" cx="47.610" cy="46.580" r="0.5" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="FOOTSWITCH" cx="30.000" cy="93.500" r="6.100" fill="none" stroke="#000" stroke-width="0.2"/>
+<circle id="FOOTSWITCH_centre" cx="30.000" cy="93.500" r="0.5" fill="none" stroke="#000" stroke-width="0.2"/>
+</svg>
