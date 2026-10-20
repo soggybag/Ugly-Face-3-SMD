@@ -10333,7 +10333,7 @@
 				)
 			)
 		)
-		(property "Description" "Mix input (oscillator), 47k (v1.1: was 15k) balances the 8 Vpp square against the clean dry signal"
+		(property "Description" "Mix input (oscillator): 220k (v1.3; v1.1 47k) balances the ~8 V square against the dry signal so MIX unity sits near noon"
 			(at 284.48 167.64 90)
 			(hide yes)
 			(effects
@@ -15851,7 +15851,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17407"
+		(property "LCSC" "C149504"
 			(at 167.64 180.34 90)
 			(hide yes)
 			(effects
@@ -15927,7 +15927,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17407"
+		(property "LCSC" "C149504"
 			(at 149.86 172.72 90)
 			(hide yes)
 			(effects

@@ -20,7 +20,7 @@ Schematic: [UglyFace_03_schematic.pdf](UglyFace_03_schematic.pdf) · Layout: [Ug
 
 | Knob | Part | Function |
 |---|---|---|
-| ENVELOPE | RV1 B1k | How much the playing level drives the vactrol (pitch bend) |
+| ENVELOPE | RV1 A10k (v1.3; v1.1 B1k) | How much the playing level drives the vactrol (pitch bend); fully CCW = off |
 | THRESHOLD | SW1 toggle (v1.1) | GATED / GLITCH / ON. GLITCH sits on the 555's reset threshold, set once with the RV2 trimmer |
 | FREQUENCY | RV3 C100k | Oscillator pitch (measured ~33 Hz to ~5 kHz) |
 | MIX | RV4 B10k | Clean guitar (v1.1) ↔ synth square |
@@ -35,6 +35,7 @@ Schematic: [UglyFace_03_schematic.pdf](UglyFace_03_schematic.pdf) · Layout: [Ug
 ## Status
 
 - **v1.1 (2026-10-03, JLC files generated):** C4 100 µF, 22k into RESET, RC-filtered 555 supply, C7 2.2 µ, C12/C13 1 µ, clean dry path (U4A) for MIX, buffered VB (U4B), THRESHOLD toggle + GLITCH trimmer. Details in [docs/Build Notes.md](docs/Build%20Notes.md).
+- **v1.3 (2026-10-19, JLC files generated, not ordered):** new envelope (U5 LM358 detector from the clean DRY_OUT, Q1 current sink for the vactrol LED, DECAY trimmer RV6), ENVELOPE pot A10k, BAT54S RESET clamp, R21 15k, R13 220k, slotted Taiway footprint. Details: [docs/v1.3 Envelope.md](docs/v1.3%20Envelope.md).
 
 - Boards received from JLCPCB 2026-10-01; bench tested 2026-10-02; **working with a guitar.** Measurements: [docs/Test Procedure.md](docs/Test%20Procedure.md).
 - **Known issues (v1.0) / next revision** ([docs/Build Notes.md](docs/Build%20Notes.md)):
