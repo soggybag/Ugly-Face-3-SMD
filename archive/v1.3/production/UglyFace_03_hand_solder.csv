@@ -1,0 +1,12 @@
+Designator,Value,Footprint,Qty,Note
+RV1,A10k,Alpha 16mm vertical,1,"ENVELOPE - back side (v1.3: A10k level into the envelope detector; fully CCW = no envelope)"
+RV3,C100k,Alpha 16mm vertical,1,"FREQUENCY - back side"
+RV4,B10k,Alpha 16mm vertical,1,"MIX - back side (clean dry <-> synth)"
+RV5,A100k,Alpha 16mm vertical,1,"VOLUME - back side"
+SW1,THR,Taiway 100 mini SPDT ON-OFF-ON (PC pins or solder lugs),1,"THRESHOLD - back side, at the old THRESHOLD pot position: GATED / GLITCH (centre) / ON. v1.3: plated slots fit the flat lugs"
+RV2,10k,Bourns 3362P trimmer,1,"GLITCH trim - front, bottom-left. Toggle to centre, no input: turn until the 555 just starts (pin 4 ~1.0 V, about 60% of the travel with R8 47k), then back off slightly"
+RV6,500k,Bourns 3362P trimmer (504),1,"DECAY trim (v1.3) - front, top right. Sets how fast the envelope falls (~20-250 ms). Trim its leads flush on the back: they sit under the MIX pot body"
+D2,LED,LED_D3.0mm,1,"Power LED - back side: square pad = cathode"
+U3,Vactrol,DIY LED + LDR,1,"Front, light-tight (heat-shrink or box). v1.3: LED polarity matters: pin 1 = LED anode (long leg, to R35), pin 2 = cathode (to Q1). Trim leads flush on the back (under the FREQUENCY pot)"
+D3 D4,1N4148 or 3 mm LED,Compact 2.54 mm pads,0-2,"OPTIONAL dry soft clip, not fitted: two red 3 mm LEDs (mild) or standing 1N4148s (more clip). Square pad = cathode"
+J1-J8,wire pads,SolderWire 0.9 mm,8,"9V, GND, IN, IN GND, OUT, OUT GND, LED-, LED GND; trim J1/J2 flush on the back (under the FREQUENCY pot)"

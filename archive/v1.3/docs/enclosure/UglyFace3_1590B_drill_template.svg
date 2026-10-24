@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80.0mm" height="132.0mm" viewBox="-40.0 -66.0 80.0 132.0" font-family="Helvetica">
+<rect x="-30.0" y="-56.0" width="60.0" height="112.0" rx="4" fill="none" stroke="black" stroke-width="0.3"/>
+<text x="-30.0" y="-62.0" font-size="3">Ugly Face 3 v1.1 — 1590B face, outside view, 1:1</text><text x="-30.0" y="-58.5" font-size="2.2">Origin = centre. Top = jack end. Jacks not included.</text>
+<line x1="-3" y1="0" x2="3" y2="0" stroke="#999" stroke-width="0.15"/><line x1="0" y1="-3" x2="0" y2="3" stroke="#999" stroke-width="0.15"/>
+<circle cx="-17.95" cy="-36.22" r="3.75" fill="none" stroke="black" stroke-width="0.25"/><line x1="-18.95" y1="-36.22" x2="-16.95" y2="-36.22" stroke="red" stroke-width="0.15"/><line x1="-17.95" y1="-37.22" x2="-17.95" y2="-35.22" stroke="red" stroke-width="0.15"/>
+<text x="-17.95" y="-29.47" font-size="2.2" text-anchor="middle">MIX Ø7.5</text>
+<circle cx="-0.17" cy="-36.22" r="3.75" fill="none" stroke="black" stroke-width="0.25"/><line x1="-1.17" y1="-36.22" x2="0.83" y2="-36.22" stroke="red" stroke-width="0.15"/><line x1="-0.17" y1="-37.22" x2="-0.17" y2="-35.22" stroke="red" stroke-width="0.15"/>
+<text x="-0.17" y="-29.47" font-size="2.2" text-anchor="middle">FREQ Ø7.5</text>
+<circle cx="17.61" cy="-36.22" r="3.75" fill="none" stroke="black" stroke-width="0.25"/><line x1="16.61" y1="-36.22" x2="18.61" y2="-36.22" stroke="red" stroke-width="0.15"/><line x1="17.61" y1="-37.22" x2="17.61" y2="-35.22" stroke="red" stroke-width="0.15"/>
+<text x="17.61" y="-29.47" font-size="2.2" text-anchor="middle">VOLUME Ø7.5</text>
+<circle cx="-17.95" cy="-10.82" r="3.75" fill="none" stroke="black" stroke-width="0.25"/><line x1="-18.95" y1="-10.82" x2="-16.95" y2="-10.82" stroke="red" stroke-width="0.15"/><line x1="-17.95" y1="-11.82" x2="-17.95" y2="-9.82" stroke="red" stroke-width="0.15"/>
+<text x="-17.95" y="-4.07" font-size="2.2" text-anchor="middle">ENV Ø7.5</text>
+<circle cx="-0.17" cy="-8.79" r="1.6" fill="none" stroke="black" stroke-width="0.25"/><line x1="-1.17" y1="-8.79" x2="0.83" y2="-8.79" stroke="red" stroke-width="0.15"/><line x1="-0.17" y1="-9.79" x2="-0.17" y2="-7.789999999999999" stroke="red" stroke-width="0.15"/>
+<text x="-0.17" y="-4.19" font-size="2.2" text-anchor="middle">LED Ø3.2</text>
+<circle cx="17.61" cy="-9.42" r="3.25" fill="none" stroke="black" stroke-width="0.25"/><line x1="16.61" y1="-9.42" x2="18.61" y2="-9.42" stroke="red" stroke-width="0.15"/><line x1="17.61" y1="-10.42" x2="17.61" y2="-8.42" stroke="red" stroke-width="0.15"/>
+<text x="17.61" y="-3.17" font-size="2.2" text-anchor="middle">THR Ø6.5</text>
+<circle cx="0.0" cy="37.5" r="6.1" fill="none" stroke="black" stroke-width="0.25"/><line x1="-1.0" y1="37.5" x2="1.0" y2="37.5" stroke="red" stroke-width="0.15"/><line x1="0.0" y1="36.5" x2="0.0" y2="38.5" stroke="red" stroke-width="0.15"/>
+<text x="0.0" y="46.60" font-size="2.2" text-anchor="middle">FOOTSWITCH Ø12.2</text>
+<rect x="-25" y="58" width="50" height="5" fill="none" stroke="black" stroke-width="0.25"/><text x="-24" y="62.0" font-size="2.5">Check: this box = 50 × 5 mm printed</text>
+</svg>
