@@ -15081,7 +15081,7 @@
 				)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 0 1.65 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15104,7 +15104,7 @@
 				)
 			)
 		)
-		(property "Description" "Threshold top"
+		(property "Description" "Threshold top (v1.3: 47k, was 56k; JLC Basic. GLITCH range at RV2 ~0.15-1.66 V, trim point ~60%)"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15127,7 +15127,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17756"
+		(property "LCSC" "C17713"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -16071,7 +16071,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "4.7u"
 			(at 0 1.68 180)
 			(layer "F.Fab")
 			(uuid "491a9b60-a778-46f6-bb5e-167e2964a86e")
@@ -16093,7 +16093,7 @@
 				)
 			)
 		)
-		(property "Description" "Envelope hold cap"
+		(property "Description" "Envelope hold cap: 4.7u 25V X5R (~3u at the 4.5-7 V DC bias; bench-tested 3.3u film-equivalent on unit 1, 2026-10-23)"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -16116,7 +16116,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C28323"
+		(property "LCSC" "C1779"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18143,7 +18143,7 @@
 			)
 		)
 	)
-	(gr_text "Deformis v3"
+	(gr_text "FU-2 v1.3"
 		(at 123.25 130 0)
 		(layer "F.SilkS")
 		(uuid "74cdd71d-3aa4-4568-9375-e0524fcdbef8")

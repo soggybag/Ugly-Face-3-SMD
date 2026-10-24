@@ -35,6 +35,7 @@ Schematic: [UglyFace_03_schematic.pdf](UglyFace_03_schematic.pdf) · Layout: [Ug
 ## Status
 
 - **v1.1 (2026-10-03, JLC files generated):** C4 100 µF, 22k into RESET, RC-filtered 555 supply, C7 2.2 µ, C12/C13 1 µ, clean dry path (U4A) for MIX, buffered VB (U4B), THRESHOLD toggle + GLITCH trimmer. Details in [docs/Build Notes.md](docs/Build%20Notes.md).
+- **v1.3 = FU-2 (2026-10-23, renamed: its own original pedal; board silk "FU-2 v1.3"):** envelope bench-tested on unit 1 (C21 → 4.7µ, RV6 DECAY trimmer kept), R8 56k → 47k (JLC Basic; GLITCH trim point ~60%). JLC files regenerated: 64 placements, 36 lines; extended = TLC555, 100µ, BAT54S.
 - **v1.3 (2026-10-19, JLC files generated, not ordered):** new envelope (U5 LM358 detector from the clean DRY_OUT, Q1 current sink for the vactrol LED, DECAY trimmer RV6), ENVELOPE pot A10k, BAT54S RESET clamp, R21 15k, R13 220k, slotted Taiway footprint. Details: [docs/v1.3 Envelope.md](docs/v1.3%20Envelope.md).
 
 - Boards received from JLCPCB 2026-10-01; bench tested 2026-10-02; **working with a guitar.** Measurements: [docs/Test Procedure.md](docs/Test%20Procedure.md).
